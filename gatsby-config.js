@@ -1,4 +1,4 @@
-const config = require("./config")
+const config = require("./config");
 
 module.exports = {
   siteMetadata: {
@@ -22,7 +22,7 @@ module.exports = {
     // {
     //   resolve: `gatsby-plugin-manifest`,
     //   options: {
-    //     name: `Florin Dumitru | FrontEnd Developer`,
+    //     name: `Florin Dumitru | FrontEnd Engineer`,
     //     short_name: `starter`,
     //     start_url: `/`,
     //     background_color: `#663399`,
@@ -35,4 +35,4 @@ module.exports = {
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
   ],
-}
+};

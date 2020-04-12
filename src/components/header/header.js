@@ -110,7 +110,7 @@ const Header = () => {
         <figure css={figure}>
           <div css={logoContainer}>
             <Link to="#" aria-label="home" css={logo}>
-              DT
+              DF
             </Link>
           </div>
         </figure>

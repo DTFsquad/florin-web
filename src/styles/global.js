@@ -7,6 +7,9 @@ export default css`
   html {
     font-size: 62.5%;
   }
+  html {
+    scroll-behavior: smooth;
+  }
   *,
   *::before,
   *::after {
@@ -47,6 +50,11 @@ export default css`
     list-style: none;
   }
   /* A elements that don't have a class get default styles */
+  a,
+  a:visited,
+  a:link {
+    text-decoration: none;
+  }
   a:not([class]) {
     text-decoration-skip-ink: auto;
   }

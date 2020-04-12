@@ -45,6 +45,8 @@ export default css`
     line-height: 1.5;
   }
   /* Remove list styles on ul, ol elements with a class attribute */
+  ul,
+  ol,
   ul[class],
   ol[class] {
     list-style: none;

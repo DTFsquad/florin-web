@@ -2,6 +2,7 @@ import React from "react";
 import { css } from "@emotion/core";
 import { theme } from "../../styles";
 import Button from "../button/button";
+import LinkButton from "../linkButton/linkButton";
 
 const { fonts, colors } = theme;
 
@@ -34,15 +35,13 @@ const Contact = () => {
     <section css={section} id="contact">
       <h4 css={header}>Get in touch!</h4>
       <p css={subText}>
-        I am not available to any freelance work at the moment, but I am always
+        I am available to any freelance work at the moment, but I am always
         happy to consider new ideas or collaborations, or even just to have a
         chat about a new technology!
       </p>
-      <Button>
-        <a href="mailto:contact@danieletortora.com?subject=Get%20in%20Touch">
-          Contact me
-        </a>
-      </Button>
+      <LinkButton href="mailto:contact@danieletortora.com?subject=Get%20in%20Touch">
+        Contact me
+      </LinkButton>
     </section>
   );
 };

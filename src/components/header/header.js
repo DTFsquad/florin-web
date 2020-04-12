@@ -85,7 +85,7 @@ const Header = () => {
             data-aos="fade-down"
             data-aos-duration={heroAnimationDuration - 300}
           >
-            <a href="">
+            <a href="#about">
               <span>0.</span> About
             </a>
           </li>
@@ -93,7 +93,7 @@ const Header = () => {
             data-aos="fade-down"
             data-aos-duration={heroAnimationDuration - 200}
           >
-            <a href="">
+            <a href="#work">
               <span>1.</span> Work
             </a>
           </li>
@@ -101,12 +101,12 @@ const Header = () => {
             data-aos="fade-down"
             data-aos-duration={heroAnimationDuration - 100}
           >
-            <a href="">
+            <a href="#contact">
               <span>2.</span> Contact
             </a>
           </li>
           <li data-aos="fade-left" data-aos-duration={heroAnimationDuration}>
-            <a href="">Resume</a>
+            <a href="#resume">Resume</a>
           </li>
         </ul>
       </nav>

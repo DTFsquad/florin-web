@@ -69,7 +69,7 @@ const Hero = () => {
           data-aos-duration={initialAnimationDuration}
         >
           <span css={intro}>Hi, I am </span>
-          Daniele Tortora.
+          Florin Dumitru.
         </h1>
         <h2
           css={subTitle}

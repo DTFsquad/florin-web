@@ -28,10 +28,16 @@ module.exports = {
         analyzerMode: "static",
       },
     },
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: "UA-155140384-1",
+      },
+    },
     // {
     //   resolve: `gatsby-plugin-manifest`,
     //   options: {
-    //     name: `Daniele Tortora | Front End Engineer`,
+    //     name: `Florin Dumitru | Front End Engineer`,
     //     short_name: `starter`,
     //     start_url: `/`,
     //     background_color: `#663399`,

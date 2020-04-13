@@ -86,6 +86,9 @@ export default css`
     }
   }
   /* CUSTOM STYLES BEGINS HERE: */
+  ::selection {
+    background-color: ${colors.brightYellow};
+  }
   body {
     background-color: ${colors.maastrichtBlue};
     color: ${colors.white};

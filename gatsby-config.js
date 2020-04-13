@@ -10,6 +10,17 @@ module.exports = {
   plugins: [
     `gatsby-plugin-react-helmet`,
     {
+      resolve: `gatsby-alias-imports`,
+      options: {
+        aliases: {
+          "~components": "src/components",
+          "~containers": "src/containers",
+          "~styles": "src/styles",
+          "~images": "src/images",
+        },
+      },
+    },
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
@@ -22,7 +33,7 @@ module.exports = {
     // {
     //   resolve: `gatsby-plugin-manifest`,
     //   options: {
-    //     name: `Florin Dumitru | FrontEnd Engineer`,
+    //     name: `Daniele Tortora | Front End Engineer`,
     //     short_name: `starter`,
     //     start_url: `/`,
     //     background_color: `#663399`,

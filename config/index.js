@@ -20,7 +20,7 @@ module.exports = {
     },
     {
       name: "Linkedin",
-      url: "https://www.linkedin.com/in/florin-dumitru-a997941a/,
+      url: "https://www.linkedin.com/in/florin-dumitru-a997941a/",
     },
     {
       name: "Twitter",

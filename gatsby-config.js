@@ -33,7 +33,7 @@ module.exports = {
     // {
     //   resolve: `gatsby-plugin-manifest`,
     //   options: {
-    //     name: `Daniele Tortora | Front End Engineer`,
+    //     name: `Florin Dumitru | Front End Engineer`,
     //     short_name: `starter`,
     //     start_url: `/`,
     //     background_color: `#663399`,

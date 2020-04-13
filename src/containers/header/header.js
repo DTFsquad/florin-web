@@ -140,30 +140,34 @@ const responsiveList = css`
 `;
 
 const Sidebar = styled.aside`
-  display: block;
-  position: fixed;
-  top: 0;
-  right: -999px;
-  height: 100vh;
-  width: 65vw;
-  background: ${colors.greyBlue};
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
-  align-items: center;
-  z-index: 999;
-  transition-duration: 450ms;
-  &.slide-enter {
-    right: -999px;
-  }
-  &.slide-enter-done {
+  display: none;
+  @media screen and (max-width: 720px) {
+    display: block;
+    position: fixed;
+    top: 0;
     right: 0;
-  }
-  &.slide-exit {
-    right: 0;
-  }
-  &.slide-exit-done {
-    right: -999px;
+    height: 100vh;
+    width: 65vw;
+    background: ${colors.greyBlue};
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    transform: translateX(100%);
+    transition-duration: 450ms;
+    &.slide-enter {
+      transform: translateX(100%);
+    }
+    &.slide-enter-done {
+      transform: translateX(0);
+    }
+    &.slide-exit {
+      transform: translateX(0);
+    }
+    &.slide-exit-done {
+      transform: translateX(100%);
+    }
   }
 `;
 
@@ -229,7 +233,7 @@ const Header = () => {
             <a href="#resume">Resume</a>
           </li>
         </ul>
-        <Hamburger onClick={onHamburgerClick} />
+        <Hamburger open={sideDrawerOpen} onClick={onHamburgerClick} />
       </nav>
       <CSSTransition
         in={sideDrawerOpen}

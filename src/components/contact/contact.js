@@ -33,11 +33,11 @@ const Contact = () => {
     <section css={section} id="contact">
       <h4 css={header}>Get in touch</h4>
       <p css={subText}>
-        I am not available to any freelance work at the moment, but I am always
+        I am available to any freelance work at the moment and I am always
         happy to consider new ideas or collaborations, or even just to have a
         chat about a new technology!
       </p>
-      <LinkButton href="mailto:contact@danieletortora.com?subject=Get%20in%20Touch">
+      <LinkButton to="mailto:dumitruflorin19@yahoo.com?subject=Get%20in%20Touch">
         Contact me
       </LinkButton>
     </section>

@@ -1,8 +1,8 @@
 import React from "react";
 import { css } from "@emotion/core";
 import styled from "@emotion/styled";
-import { theme } from "~styles";
-import profilePic from "~images/profilepic.jpg";
+import { theme } from "styles";
+import profilePic from "images/profilepic.jpg";
 
 const { colors, fonts } = theme;
 
@@ -237,7 +237,7 @@ const About = () => {
               modern framework and technologies (Node, React, Redux, GraphQL).
               Despite having then gained a relevant commercial experience in all
               of these technologies, I strongly believe in learning as a
-              life-long process that is parallel and essential to an Engineerâ€™s
+              life-long process that is parallel and essential to an Engineer’s
               success and the quality of code that is delivered.
             </Text>
           )}

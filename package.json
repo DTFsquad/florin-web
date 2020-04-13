@@ -10,7 +10,6 @@
     "aos": "^2.3.4",
     "eslint-import-resolver-alias": "^1.1.2",
     "gatsby": "^2.20.12",
-    "gatsby-alias-imports": "^1.0.4",
     "gatsby-image": "^2.3.1",
     "gatsby-plugin-emotion": "^4.2.1",
     "gatsby-plugin-manifest": "^2.3.3",

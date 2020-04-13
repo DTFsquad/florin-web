@@ -19,10 +19,19 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-emotion`,
+    {
+      resolve: "gatsby-plugin-webpack-bundle-analyzer",
+      options: {
+        production: true,
+        disable: !process.env.ANALYZE_BUNDLE_SIZE,
+        generateStatsFiles: true,
+        analyzerMode: "static",
+      },
+    },
     // {
     //   resolve: `gatsby-plugin-manifest`,
     //   options: {
-    //     name: `Florin Dumitru | Front End Engineer`,
+    //     name: `Daniele Tortora | Front End Engineer`,
     //     short_name: `starter`,
     //     start_url: `/`,
     //     background_color: `#663399`,

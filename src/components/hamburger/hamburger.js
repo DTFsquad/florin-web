@@ -8,7 +8,7 @@ const HamburgerButton = styled.button`
   display: none;
   @media screen and (max-width: 720px) {
     position: fixed;
-    z-index: 999;
+    z-index: 1500;
     top: 20px;
     right: 20px;
     outline: none;

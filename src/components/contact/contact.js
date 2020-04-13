@@ -7,7 +7,7 @@ const { fonts, colors } = theme;
 
 const section = css`
   width: 100%;
-  height: 100vh;
+  height: 90vh;
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
@@ -33,7 +33,7 @@ const Contact = () => {
     <section css={section} id="contact">
       <h4 css={header}>Get in touch</h4>
       <p css={subText}>
-        I am available to any freelance work at the moment and I am always
+        I am not available to any freelance work at the moment, but I am always
         happy to consider new ideas or collaborations, or even just to have a
         chat about a new technology!
       </p>

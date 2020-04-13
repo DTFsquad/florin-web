@@ -37,6 +37,7 @@ const anchor = css`
   }
   &:hover > svg {
     transform: rotate(-15deg);
+    opacity: 0.8;
   }
 `;
 
@@ -50,17 +51,17 @@ const Footer = () => {
     <footer css={footer}>
       <ul css={ul}>
         <li>
-          <a href="https://www.linkedin.com/in/florin-dumitru-a997941a/" css={anchor}>
+          <a href="https://www.linkedin.com/in/danieletortora/" css={anchor}>
             <LinkedInIcon width="64" />
           </a>
         </li>
         <li>
-          <a href="https://github.com/DTFsquad" css={anchor}>
+          <a href="https://github.com/floroz" css={anchor}>
             <GithubIcon width="64" />
           </a>
         </li>
         <li>
-          <a href="https://twitter.com/flololo" css={anchor}>
+          <a href="https://twitter.com/floroz87" css={anchor}>
             <TwitterIcon width="64" />
           </a>
         </li>

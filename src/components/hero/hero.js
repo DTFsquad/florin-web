@@ -69,7 +69,7 @@ const Hero = () => {
           data-aos-duration={initialAnimationDuration}
         >
           <span css={intro}>Hi, I am </span>
-          Florin Dumitru.
+          Daniele Tortora.
         </h1>
         <h2
           css={subTitle}
@@ -91,7 +91,7 @@ const Hero = () => {
           applications.
         </p>
         <LinkButton
-          to="#contact"
+          href="#contact"
           data-aos="fade-up"
           data-aos-easing="ease-in-cubic"
           data-aos-delay={delay(200)}

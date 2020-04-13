@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "gatsby";
 import { css } from "@emotion/core";
 import styled from "@emotion/styled";
-import theme from "../../styles/theme";
+import { theme } from "~styles";
 
 const { flexCenter, colors, fonts } = theme;
 
@@ -36,7 +36,7 @@ export const Logo = props => {
     <Figure ref={props.logoRef} id="logo" {...props}>
       <LogoContainer>
         <Link to="#" aria-label="home" css={logo}>
-          DF
+          DT
         </Link>
       </LogoContainer>
     </Figure>

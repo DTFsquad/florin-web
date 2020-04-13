@@ -1,7 +1,7 @@
 import React from "react";
 import { css } from "@emotion/core";
-import { theme } from "../../styles";
-import LinkButton from "../linkButton/linkButton";
+import { theme } from "~styles";
+import LinkButton from "~components/link-button/link-button";
 
 const { colors, fonts, initialAnimationDuration, delay } = theme;
 
@@ -86,7 +86,7 @@ const Hero = () => {
           data-aos-duration={initialAnimationDuration}
         >
           <span css={intro}>Hi, I am </span>
-          Florin Dumitru.
+          Daniele Tortora.
         </h1>
         <h2
           css={subTitle}

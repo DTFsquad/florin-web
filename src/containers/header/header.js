@@ -38,7 +38,7 @@ const nav = css`
   justify-content: space-between;
   align-items: center;
   flex-flow: row nowrap;
-  &:first-child {
+  & > div:nth-of-type(1) {
     margin-left: 3.5rem;
     @media screen and (max-width: 720px) {
       margin-left: 2rem;

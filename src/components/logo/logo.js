@@ -36,7 +36,7 @@ export const Logo = props => {
     <LogoBox ref={props.logoRef} id="logo" {...props}>
       <LogoContainer>
         <Link to="#" aria-label="home" css={logo}>
-          DT
+          DF
         </Link>
       </LogoContainer>
     </LogoBox>

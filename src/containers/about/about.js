@@ -351,7 +351,7 @@ const About = () => {
             />
             <Img
               fluid={image.fluid}
-              alt="Profile Picture of Daniele Tortora"
+              alt="Profile Picture of Florin Dumitru"
               css={imgeStyle}
             />
           </ImgContainer>

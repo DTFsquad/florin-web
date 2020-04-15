@@ -10,6 +10,7 @@ import Header from "containers/header/header";
 import { Global } from "@emotion/core";
 import { globalStyles } from "styles";
 
+
 // if we're in dev mode
 if (process.env.NODE_ENV === "development") {
   // Set up react-axe to catch accessibility issues during development

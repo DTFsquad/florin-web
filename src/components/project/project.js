@@ -36,12 +36,13 @@ const DescriptionModal = styled.aside`
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 999;
-  width: 50vw;
-  height: 50vh;
+  width: 65vw;
+  max-width: 70rem;
+  height: 80vh;
   padding: 2.5rem;
   border-radius: 5px;
   background-color: ${colors.grey};
-  transition: all 400ms linear;
+  transition: all 400ms ease-out;
   &.modal-enter {
     transform: translate(-999%, -50%);
   }
@@ -102,7 +103,7 @@ const MoreButton = styled.button`
   top: 6.7rem;
   right: 50%;
   transform: translateX(50%);
-  z-index: 100;
+  z-index: 50;
   span {
     display: inline-block;
     transition: all 0.2s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
@@ -128,12 +129,13 @@ const HR = styled.hr`
 `;
 
 const Project = ({
+  modalIsOpen,
+  setModalIsOpen,
   originalMacMockupPhotoName,
   originalPhoneMockupPhotoName,
   title = "Project Untitled",
   description = "No Description provided for this project",
 }) => {
-  const [modalOpen, setModalOpen] = useState(false);
   const { images } = useStaticQuery(graphql`
     {
       images: allImageSharp {
@@ -172,17 +174,21 @@ const Project = ({
     <Container>
       <Figure>
         <Title>{title}</Title>
-        <MoreButton onClick={() => setModalOpen(value => !value)}>
+        <MoreButton onClick={() => setModalIsOpen(value => !value)}>
           More <span>&rarr;</span>
         </MoreButton>
         <Img fluid={phonePic.node.fluid} css={phoneImgStyle}></Img>
         <Img fluid={macPic.node.fluid} css={macImgStyle}></Img>
-        <CSSTransition in={modalOpen} timeout={400} classNames="modal">
-          <DescriptionModal open={modalOpen}>
+        <CSSTransition
+          in={modalIsOpen}
+          timeout={{ enter: 400, exit: 0 }}
+          classNames="modal"
+        >
+          <DescriptionModal open={modalIsOpen}>
             <Description>{description}</Description>
           </DescriptionModal>
         </CSSTransition>
-        {modalOpen && <Backdrop onClick={() => setModalOpen(false)} />}
+        {modalIsOpen && <Backdrop onClick={() => setModalIsOpen(false)} />}
       </Figure>
       <HR />
     </Container>

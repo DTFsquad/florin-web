@@ -17,6 +17,7 @@ const section = css`
   flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
+  margin-bottom: 5rem;
   @media screen and (max-width: 900px) {
     padding: 0 4rem;
   }
@@ -50,7 +51,7 @@ const Skills = () => {
       {/* <h4 css={title}>Tech Skills</h4> */}
       <div css={skillContainer}>
         <JSIcon width="44px" height="auto" />
-        <ProgressBar level={90} description="JavaScript ES6+" />
+        <ProgressBar level={90} description="JavaScript ES9+" />
         <ReactIcon width="55px" height="auto" />
         <ProgressBar level={90} description="React | Hooks" />
         <ReduxIcon width="40px" height="auto" />

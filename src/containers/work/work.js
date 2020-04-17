@@ -63,21 +63,21 @@ const Work = () => {
     <Section id="work">
       {/* <Title>Work</Title> */}
       <Project
-        originalPhoneMockupPhotoName="noble-iphone-mockup.png"
-        originalMacMockupPhotoName="noble-macbook-mockup.png"
-        title="Noble | Vision"
+        originalPhoneMockupPhotoName="we-pair-iphone-mockup.png"
+        originalMacMockupPhotoName="we-pair-macbook-mockup.png"
+        title="We Pair | Team App"
         card={NobleCard}
       />
       <Project
         originalPhoneMockupPhotoName="portfolio-iphone-mockup.png"
         originalMacMockupPhotoName="portfolio-macbook-mockup.png"
-        title="Portfolio | V1"
+        title="Portfolio | Version 1.0"
         card={PortfolioCard}
       />
       <Project
-        originalPhoneMockupPhotoName="hackney-iphone-mockup.png"
-        originalMacMockupPhotoName="hackney-macbook-mockup.png"
-        title="Hackney | API Hub"
+        originalPhoneMockupPhotoName="kodflix-iphone-mockup.png"
+        originalMacMockupPhotoName="kodflix-macbook-mockup.png"
+        title="Kodflix | Movie database"
         card={HackneyCard}
       />
     </Section>

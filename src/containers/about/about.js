@@ -8,7 +8,7 @@ import { useStaticQuery, graphql } from "gatsby";
 const { colors, fonts } = theme;
 
 const Section = styled.section`
-  width: 100vw;
+  width: 100%;
   padding: 0 5rem;
   display: flex;
   justify-content: center;
@@ -63,7 +63,7 @@ const AboutGrid = styled.article`
   position: relative;
   display: grid;
   grid-template-columns: min-content 1fr;
-  grid-template-rows: 60px 60px 60px;
+  grid-template-rows: 60px 60px 1fr;
   grid-gap: 2rem;
   @media screen and (max-width: 920px) {
     grid-row: 2/3;
@@ -266,15 +266,25 @@ const About = () => {
         return (
           <Text>
             Despite choosing a different academic path, which led me to
-            successfully complete a Bachelor in Communication Sciences (Social, Political and Communication Sciences)
-            technology has remained my primary interest and
-            a source of inspiration and curiosity. In December 2017, after
-            completing a Microsoft 98-361 MICROSOFT Tehnology Associate (MTA),{" "}
+            successfully complete a Bachelor in Psychology and a Master in
+            Clinical Psychology, technology has remained my primary interest and
+            a source of inspiration and curiosity. In July 2018, after
+            completing a Postgraduate at the Faculty of Business and Law of De
+            Montfort University of Leicester,{" "}
             <HighLight>
               I realised that I wanted to do something that I was really
               passionate about, an invest all my energy into it.
             </HighLight>
-            <br />I started coding everyday after work for  1 hour, and for 8 hours during the weekends.
+            <br />
+            In September 2018, I planned and drafted my roadmap to become a web
+            developer within the next 6 months. I started learning HTML, CSS and
+            JavaScript from different sources (freeCodeCamp, Udemy). The more I
+            dived into web-development the more I loved it.
+            <br />I started coding everyday after work for 2-3 hours, and for
+            10-12 hours during the weekends. Two months into learning the
+            basics, I started applying for several junior roles, and within a
+            couple of weeks and a few interviews/technical tests, I received an
+            offer for a full-time position as a Junior Developer.
           </Text>
         );
       case "present":
@@ -286,11 +296,11 @@ const About = () => {
             Compatibility, Web Performance and Web Security, Accessibility) but
             I have also spent a large amount of time learning and experimenting
             with modern framework and technologies (React, Redux, GraphQL, Node,
-            Apollo, Vue, Angular, SVG Animation, GSAP, AWS).
+            Apollo, Vue, Angular, SVG Animation, GSAP).
             <br />
             <HighLight>
               I strongly believe that learning is a life-long process that is
-              essential to an Engineer`s success{" "}
+              essential to an Engineer’s success{" "}
             </HighLight>
             in delivering software the reflects the best standard of the
             industry
@@ -341,7 +351,7 @@ const About = () => {
             />
             <Img
               fluid={image.fluid}
-              alt="Profile Picture of Florin Dumitru"
+              alt="Profile Picture of Daniele Tortora"
               css={imgeStyle}
             />
           </ImgContainer>

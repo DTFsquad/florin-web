@@ -107,4 +107,25 @@ export default css`
     font-weight: normal;
     font-size: 2rem;
   }
+  /**
+ * Scroll bar
+ */
+  /* width */
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: ${colors.maastrichtBlueTransparent};
+    border-radius: 10px;
+  }
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: ${colors.brightYellowTransparent};
+    border-radius: 10px;
+  }
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: ${colors.brightYellow};
+  }
 `;

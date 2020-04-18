@@ -66,7 +66,7 @@ const Work = () => {
         originalPhoneMockupPhotoName="we-pair-iphone-mockup.png"
         originalMacMockupPhotoName="we-pair-macbook-mockup.png"
         title="We Pair | Team App"
-        card={NobleCard}
+        card={WePairCard}
       />
       <Project
         originalPhoneMockupPhotoName="portfolio-iphone-mockup.png"
@@ -78,7 +78,7 @@ const Work = () => {
         originalPhoneMockupPhotoName="kodflix-iphone-mockup.png"
         originalMacMockupPhotoName="kodflix-macbook-mockup.png"
         title="Kodflix | Movie database"
-        card={HackneyCard}
+        card={KodflixCard}
       />
     </Section>
   );
@@ -86,7 +86,7 @@ const Work = () => {
 
 export default Work;
 
-var NobleCard = (
+var WePairCard = (
   <>
     <DescTitle>Noble | Vision</DescTitle>
     <CardText>
@@ -129,7 +129,7 @@ var PortfolioCard = (
   </>
 );
 
-var HackneyCard = (
+var KodflixCard = (
   <>
     <DescTitle>Hackney | API HUB</DescTitle>
     <CardText>

@@ -52,11 +52,11 @@ const Skills = () => {
       {/* <h4 css={title}>Tech Skills</h4> */}
       <div css={skillContainer}>
         <JSIcon width="44px" height="auto" />
-        <ProgressBar level={85} description="JavaScript ES9+" />
+        <ProgressBar level={75} description="JavaScript ES6+" />
         <ReactIcon width="55px" height="auto" />
-        <ProgressBar level={90} description="React | Hooks" />
+        <ProgressBar level={70} description="React | Hooks" />
         <ReduxIcon width="40px" height="auto" />
-        <ProgressBar level={82} description="Redux | Thunk | Saga" />
+        <ProgressBar level={62} description="Redux | Thunk | Saga" />
         <GraphQLIcon width="41px" height="auto" />
         <ProgressBar level={71} description="GraphQL" />
         <ApolloIcon />

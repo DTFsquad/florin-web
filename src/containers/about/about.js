@@ -8,7 +8,7 @@ import { useStaticQuery, graphql } from "gatsby";
 const { colors, fonts } = theme;
 
 const Section = styled.section`
-  width: 100vw;
+  width: 100%;
   padding: 0 5rem;
   display: flex;
   justify-content: center;
@@ -63,7 +63,7 @@ const AboutGrid = styled.article`
   position: relative;
   display: grid;
   grid-template-columns: min-content 1fr;
-  grid-template-rows: 60px 60px 60px;
+  grid-template-rows: 60px 60px 1fr;
   grid-gap: 2rem;
   @media screen and (max-width: 920px) {
     grid-row: 2/3;
@@ -289,7 +289,7 @@ const About = () => {
             Apollo, Vue, Angular, SVG Animation, GSAP, AWS).
             <br />
             <HighLight>
-              I strongly believe that learning is a life-long process that is
+            I strongly believe that learning is a life-long process that is
               essential to an Engineer`s success{" "}
             </HighLight>
             in delivering software the reflects the best standard of the
@@ -341,7 +341,7 @@ const About = () => {
             />
             <Img
               fluid={image.fluid}
-              alt="Profile Picture of Florin Dumitru"
+              alt="Profile Picture of Daniele Tortora"
               css={imgeStyle}
             />
           </ImgContainer>

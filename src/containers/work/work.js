@@ -53,11 +53,14 @@ const CardText = styled.p`
   br {
     margin-bottom: 1.5rem;
   }
-  @media screen {
+  @media screen and (max-width: 900px) {
     font-size: 1.4rem;
     br {
       margin-bottom: 1rem;
     }
+  }
+  @media screen and (max-width: 600px) {
+    line-height: 1.5;
   }
 `;
 

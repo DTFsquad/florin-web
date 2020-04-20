@@ -50,9 +50,7 @@ const CardText = styled.p`
   color: ${colors.maastrichtBlue};
   margin: 0;
   width: 100%;
-  br {
-    margin-bottom: 1.5rem;
-  }
+  
   @media screen and (max-width: 900px) {
     font-size: 1.4rem;
     br {

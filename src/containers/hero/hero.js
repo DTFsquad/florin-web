@@ -1,11 +1,11 @@
 import React from "react";
-import { css } from "@emotion/core";
+import styled from "@emotion/styled";
 import { theme } from "styles";
 import LinkButton from "components/link-button/link-button";
 
 const { colors, fonts, initialAnimationDuration, delay } = theme;
 
-const section = css`
+const Section = styled.section`
   height: 100vh;
   font-size: 3.5rem;
   display: flex;
@@ -22,14 +22,29 @@ const section = css`
   }
 `;
 
-const box = css`
+const Box = styled.div`
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
   align-items: flex-start;
 `;
 
-const intro = css`
+const Heading = styled.h1`
+  font-size: 6rem;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+  @media screen and (max-width: 900px) {
+    font-size: 5rem;
+  }
+  @media screen and (max-width: 600px) {
+    font-size: 3.5rem;
+  }
+  @media screen and (max-width: 400px) {
+    font-size: 3rem;
+  }
+`;
+
+const Intro = styled.span`
   display: block;
   margin-bottom: 1rem;
   font-family: ${fonts.primary};
@@ -40,21 +55,15 @@ const intro = css`
   @media screen and (max-width: 900px) {
     font-size: 1.8rem;
   }
-`;
-
-const title = css`
-  font-size: 6rem;
-  line-height: 1.2;
-  margin-bottom: 1rem;
-  @media screen and (max-width: 900px) {
-    font-size: 5rem;
-  }
   @media screen and (max-width: 600px) {
-    font-size: 3.5rem;
+    font-size: 1.5rem;
+  }
+  @media screen and (max-width: 400px) {
+    font-size: 1.4rem;
   }
 `;
 
-const subTitle = css`
+const SubTitle = styled.h2`
   font-size: 5rem;
   color: ${colors.greyBlue};
   line-height: 1.1;
@@ -64,9 +73,12 @@ const subTitle = css`
   @media screen and (max-width: 600px) {
     font-size: 2.5rem;
   }
+  @media screen and (max-width: 400px) {
+    font-size: 1.7rem;
+  }
 `;
 
-const subtext = css`
+const Text = styled.p`
   margin-top: 4rem;
   font-size: 1.6rem;
   color: ${colors.greyBlue};
@@ -80,29 +92,26 @@ const subtext = css`
 
 const Hero = () => {
   return (
-    <section css={section} id="hero">
-      <div css={box}>
-        <h1
-          css={title}
+    <Section id="hero">
+      <Box>
+        <Heading
           data-aos="fade-right"
           data-aos-easing="ease-in-cubic"
           data-aos-delay={delay()}
           data-aos-duration={initialAnimationDuration}
         >
-          <span css={intro}>Hi, I am </span>
+          <Intro>Hi, I am </Intro>
           Florin Dumitru.
-        </h1>
-        <h2
-          css={subTitle}
+        </Heading>
+        <SubTitle
           data-aos="fade-right"
           data-aos-easing="ease-in-cubic"
           data-aos-delay={delay()}
           data-aos-duration={initialAnimationDuration}
         >
           I build things with JavaScript.
-        </h2>
-        <p
-          css={subtext}
+        </SubTitle>
+        <Text
           data-aos="fade-right"
           data-aos-easing="ease-in-cubic"
           data-aos-delay={delay()}
@@ -110,7 +119,7 @@ const Hero = () => {
         >
           I am a Front End Engineer based in London, UK who loves building web
           applications.
-        </p>
+        </Text>
         <LinkButton
           href="#contact"
           data-aos="fade-up"
@@ -120,8 +129,8 @@ const Hero = () => {
         >
           Contact Me
         </LinkButton>
-      </div>
-    </section>
+      </Box>
+    </Section>
   );
 };
 

@@ -14,7 +14,7 @@ const HamburgerButton = styled.button`
     outline: none;
     border: none;
     height: 6rem;
-    padding: 1rem;
+    padding: 1rem 0;
     background-color: transparent;
     display: flex;
     flex-flow: column nowrap;
@@ -42,6 +42,7 @@ const HamburgerButton = styled.button`
   }
   @media screen and (max-width: 600px) {
     right: 2.5rem;
+    top: ${props => (props.show ? "1rem" : "-5rem")};
   }
 `;
 

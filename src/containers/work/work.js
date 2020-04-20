@@ -18,6 +18,9 @@ const Section = styled.section`
   @media screen and (max-width: 600px) {
     padding: 0 2.5rem;
   }
+  @media screen and (max-width: 400px) {
+    padding: 0 1rem;
+  }
 `;
 
 const Title = styled.h4`
@@ -63,22 +66,22 @@ const Work = () => {
     <Section id="work">
       {/* <Title>Work</Title> */}
       <Project
-        originalPhoneMockupPhotoName="we-pair-iphone-mockup.png"
-        originalMacMockupPhotoName="we-pair-macbook-mockup.png"
-        title="We Pair | Team App"
-        card={WePairCard}
+        originalPhoneMockupPhotoName="noble-iphone-mockup.png"
+        originalMacMockupPhotoName="noble-macbook-mockup.png"
+        title="Noble | Vision"
+        card={NobleCard}
       />
       <Project
         originalPhoneMockupPhotoName="portfolio-iphone-mockup.png"
         originalMacMockupPhotoName="portfolio-macbook-mockup.png"
-        title="Portfolio | Version 1.0"
+        title="Portfolio | V1"
         card={PortfolioCard}
       />
       <Project
-        originalPhoneMockupPhotoName="kodflix-iphone-mockup.png"
-        originalMacMockupPhotoName="kodflix-macbook-mockup.png"
-        title="Kodflix | Movie database"
-        card={KodflixCard}
+        originalPhoneMockupPhotoName="hackney-iphone-mockup.png"
+        originalMacMockupPhotoName="hackney-macbook-mockup.png"
+        title="Hackney | API Hub"
+        card={HackneyCard}
       />
     </Section>
   );
@@ -86,7 +89,7 @@ const Work = () => {
 
 export default Work;
 
-var WePairCard = (
+var NobleCard = (
   <>
     <DescTitle>Noble | Vision</DescTitle>
     <CardText>
@@ -129,7 +132,7 @@ var PortfolioCard = (
   </>
 );
 
-var KodflixCard = (
+var HackneyCard = (
   <>
     <DescTitle>Hackney | API HUB</DescTitle>
     <CardText>

@@ -42,7 +42,7 @@ const Modal = styled.div`
   top: 50%;
   left: 50%;
   transform: translate(-50%, 990%);
-  z-index: 999;
+  z-index: 2000;
   width: 65vw;
   max-width: 50rem;
   min-height: 50vh;
@@ -69,9 +69,11 @@ const Modal = styled.div`
   }
   @media screen and (max-width: 900px) {
     width: 80vw;
+    padding: 2rem;
   }
   @media screen and (max-width: 500px) {
     width: 95vw;
+    padding: 1rem;
   }
 `;
 
@@ -98,6 +100,10 @@ const phoneImgStyle = css`
     width: 17rem;
     left: 60%;
   }
+  @media screen and (max-width: 400px) {
+    width: 12rem;
+    left: 60%;
+  }
 `;
 
 const macImgStyle = css`
@@ -107,6 +113,9 @@ const macImgStyle = css`
   }
   @media screen and (max-width: 500px) {
     width: 35rem;
+  }
+  @media screen and (max-width: 400px) {
+    width: 30rem;
   }
 `;
 

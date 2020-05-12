@@ -1,6 +1,6 @@
 {
-  "name": "portfolio-v1",
-  "description": "Personal Website Version 1.0 | Florin Dumitru | Software Engineer",
+  "name": "portfolio-version1",
+  "description": "Personal Website Version 1.0 | Florin Dumitru | Front End Developer",
   "version": "1.0.0",
   "author": "Florin Dumitru <dumitruflorin19@yahoo.com>",
   "repository": {
@@ -31,8 +31,7 @@
     "react": "^16.11.0",
     "react-dom": "^16.11.0",
     "react-helmet": "^5.2.1",
-    "react-transition-group": "^4.3.0",
-    "slick-carousel": "^1.8.1"
+    "react-transition-group": "^4.3.0"
   },
   "devDependencies": {
     "eslint-import-resolver-alias": "^1.1.2",

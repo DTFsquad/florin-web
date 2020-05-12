@@ -11,12 +11,15 @@ const Section = styled.section`
   justify-content: center;
   flex-direction: column;
   padding: 0 5rem;
-  margin: 10rem 0;
+  margin: 10rem 0 5rem 0;
   @media screen and (max-width: 900px) {
     padding: 0 4rem;
   }
   @media screen and (max-width: 600px) {
     padding: 0 2.5rem;
+  }
+  @media screen and (max-width: 400px) {
+    padding: 0 1rem;
   }
 `;
 
@@ -47,14 +50,15 @@ const CardText = styled.p`
   color: ${colors.maastrichtBlue};
   margin: 0;
   width: 100%;
-  br {
-    margin-bottom: 1.5rem;
-  }
-  @media screen {
+
+  @media screen and (max-width: 900px) {
     font-size: 1.4rem;
     br {
       margin-bottom: 1rem;
     }
+  }
+  @media screen and (max-width: 600px) {
+    line-height: 1.5;
   }
 `;
 
@@ -71,13 +75,13 @@ const Work = () => {
       <Project
         originalPhoneMockupPhotoName="portfolio-iphone-mockup.png"
         originalMacMockupPhotoName="portfolio-macbook-mockup.png"
-        title="Portfolio | Version 1.0"
+        title="Portfolio | Version 1"
         card={PortfolioCard}
       />
       <Project
         originalPhoneMockupPhotoName="kodflix-iphone-mockup.png"
         originalMacMockupPhotoName="kodflix-macbook-mockup.png"
-        title="Kodflix | Movie database"
+        title="Kodflix | Movie Database"
         card={KodflixCard}
       />
     </Section>
@@ -88,33 +92,29 @@ export default Work;
 
 var WePairCard = (
   <>
-    <DescTitle>Noble | Vision</DescTitle>
+    <DescTitle>We Pair | Team App</DescTitle>
     <CardText>
-      Noble Vision is a software designed for Security Analysts to analyze and
-      investigate real-time threats to the networks. My work involved:
+        We Pair is a web-based platform designed for Pair Programming in London, to analyze and
+      match in real-time skills and location for users. My work involved:
       <br />
-      • Develop new user-facing features both for web-app and Electron
-      applications using React, Redux, GraphQL, Apollo.
+      • Develop new user-facing features both for web-app and mobile
+      applications using React, JavaScript, HTML5, CSS3.
       <br />
-      • Migrate the codebase from Electron to Web-Browser and from class based
-      to functional components with React Hooks.
-      <br />
-      • Migrate style libraries from global SCSS/Bootstrap to a modern
-      architecture using CSS Modules and CSS-in-JS.
+      • Migrate the codebase from Figma (Design phase) to Prototype following building
+      to functional React components.
       <br />• Build reusable code and libraries for future use.
       <br />• Ensure the technical feasibility of UI/UX designs.
-      <br />• Dockerization of UI and microservices orchestrated by K8.
     </CardText>
   </>
 );
 var PortfolioCard = (
   <>
-    <DescTitle>Portfolio | V1</DescTitle>
+    <DescTitle>Portfolio | Version 1</DescTitle>
     <CardText>
-      The 'Portfolio V1' is the first iteration of my personal portfolio, with
+      The 'Portfolio Version 1' is the first iteration of my personal portfolio, with
       which I have had the chance to experiment with Gatsby and more generally
-      with the concepts behind modern Static Sites Generators. In addition to
-      that, I had the chance to implement a modern CSS-in-JS style guide using
+      with the concepts behind modern Static Sites Generators.
+      I did implemented a modern CSS-in-JS style guide using
       'emotion' and animation libraries such as AOS and GSAP 3. Some of the
       highlights and things I have achieved are:
       <br />
@@ -131,18 +131,18 @@ var PortfolioCard = (
 
 var KodflixCard = (
   <>
-    <DescTitle>Hackney | API HUB</DescTitle>
+    <DescTitle>Kodflix | Movie Database</DescTitle>
     <CardText>
-      The API Hub has been my first project as Junior Developer and has allowed
-      me to learn Angular 7 and TypeScript, along with being exposed to a broad
+      The Kodflix has been my first project as Junior Developer and has allowed
+      me to learn React 16 and HTML5, along with being exposed to a broad
       range of CSS techniques and styleguides. Other highlights are:
       <br />
-      • Designed and developed the front-end of the Developer API Hub using
-      Angular 7, SCSS and TypeScript.
+      • Designed and developed the front-end of the Kodflix using
+      SSH, CSS Grid, Flexbox, React-Dom, React.
       <br />
-      • Unit Testing using Jasmine.
-      <br />• Worked with different stakeholders and presented sprints progress
-      and demos to large audience in-person and online.
+      • Unit Testing using Jest (React embeded test library).
+      <br />• Worked with different team members to presented sprints progress
+      and demos to large audience in-person.
     </CardText>
   </>
 );

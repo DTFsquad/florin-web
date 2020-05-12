@@ -8,19 +8,23 @@ const HamburgerButton = styled.button`
   display: none;
   @media screen and (max-width: 720px) {
     position: fixed;
-    z-index: 1500;
-    top: 2rem;
+    /*
+    ** BackDrop z-index is 1600: if the sidebar is open, the hamburger index should be higher than the backdrop.
+     */
+    z-index: ${props => (props.open ? "1700" : "1500")};
+    top: ${props => (props.show ? "2rem" : "-5rem")};
     right: 4rem;
     outline: none;
     border: none;
     height: 6rem;
-    padding: 1rem;
+    padding: 1rem 0;
     background-color: transparent;
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-evenly;
     align-items: center;
     cursor: pointer;
+    transition: top 350ms ease;
     div {
       position: relative;
       width: 44px;
@@ -41,12 +45,19 @@ const HamburgerButton = styled.button`
   }
   @media screen and (max-width: 600px) {
     right: 2.5rem;
+    top: ${props => (props.show ? "1rem" : "-5rem")};
   }
 `;
 
-const Hamburger = ({ open, onClick, ...props }) => {
+const Hamburger = ({ open, onClick, show, ...props }) => {
   return (
-    <HamburgerButton onClick={onClick} open={open} {...props}>
+    <HamburgerButton
+      onClick={onClick}
+      open={open}
+      show={show}
+      aria-label="Hamburger to toggle SideBar"
+      {...props}
+    >
       <div />
       <div />
       <div />

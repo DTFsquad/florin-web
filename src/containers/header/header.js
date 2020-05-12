@@ -7,27 +7,22 @@ import Logo from "components/logo/logo";
 import Hamburger from "components/hamburger/hamburger";
 import Backdrop from "components/backdrop/backdrop";
 
-const {
-  navHeight,
-  fonts,
-  colors,
-  flexCenter,
-  initialAnimationDuration,
-  delay,
-} = theme;
+const { fonts, colors, flexCenter, initialAnimationDuration, delay } = theme;
 
-const header = css`
+const HeaderTag = styled.header`
   width: 100%;
-  height: ${navHeight};
+  height: 10rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: absolute;
-  top: 0;
+  position: fixed;
+  top: ${props => (props.show ? "0" : "-10rem")};
   z-index: 1000;
   box-shadow: none;
   background: ${colors.maastrichtBlue};
-  @media screen and (max-width: 720px) {
+  transition: top 350ms ease;
+  @media screen and (max-width: 600px) {
+    height: 7.5rem;
   }
 `;
 
@@ -140,7 +135,7 @@ const responsiveList = css`
   }
 `;
 
-const Sidebar = styled.aside`
+const Sidebar = styled.div`
   display: none;
   @media screen and (max-width: 720px) {
     display: block;
@@ -154,7 +149,10 @@ const Sidebar = styled.aside`
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
-    z-index: 999;
+    /*
+    ** BackDrop z-index is 1600: if the sidebar is open, the sidebar index should be higher than the backdrop.
+     */
+    z-index: 1650;
     transform: translateX(100%);
     transition: 350ms;
     &.slide-enter {
@@ -172,7 +170,7 @@ const Sidebar = styled.aside`
   }
 `;
 
-const Header = () => {
+const Header = ({ show }) => {
   const [sideDrawerOpen, setSideDrawerOpen] = useState(false);
 
   const onHamburgerClick = () =>
@@ -181,7 +179,7 @@ const Header = () => {
   const closeSideBar = () => setSideDrawerOpen(false);
 
   return (
-    <header css={header}>
+    <HeaderTag show={show}>
       <nav css={nav}>
         <Logo data-aos="zoom-in" data-aos-duration="500" data-aos-delay="200" />
         <ul css={ul}>
@@ -230,7 +228,11 @@ const Header = () => {
             </a>
           </li>
         </ul>
-        <Hamburger open={sideDrawerOpen} onClick={onHamburgerClick} />
+        <Hamburger
+          open={sideDrawerOpen}
+          show={show}
+          onClick={onHamburgerClick}
+        />
       </nav>
       <CSSTransition
         in={sideDrawerOpen}
@@ -272,7 +274,7 @@ const Header = () => {
         </Sidebar>
       </CSSTransition>
       {sideDrawerOpen && <Backdrop onClick={closeSideBar} />}
-    </header>
+    </HeaderTag>
   );
 };
 

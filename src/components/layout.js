@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from "react";
 import ReactDOM from "react-dom";
 import "aos/dist/aos.css";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 import PropTypes from "prop-types";
 import styled from "@emotion/styled";
 import Head from "components/head";
@@ -11,6 +9,7 @@ import LoadingIntro from "components/loading-intro/loading-intro";
 import Header from "containers/header/header";
 import { Global } from "@emotion/core";
 import { globalStyles } from "styles";
+import useScrollDirection from "hooks/useScrollDirection";
 
 // if we're in dev mode
 if (process.env.NODE_ENV === "development") {
@@ -25,7 +24,10 @@ const Main = styled.main`
 
 const Layout = ({ children }) => {
   const [loading, setLoading] = useState(true);
+  const { show } = useScrollDirection();
+
   let AOS;
+
   useEffect(() => {
     /**
      * Server-side rendering does not provide the 'document' object
@@ -50,7 +52,7 @@ const Layout = ({ children }) => {
       <Head />
       {!loading ? (
         <React.Fragment>
-          <Header />
+          <Header show={show} />
           <Main>{children}</Main>
           <Footer />
         </React.Fragment>

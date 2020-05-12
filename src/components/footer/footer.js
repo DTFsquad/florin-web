@@ -56,7 +56,7 @@ const Footer = () => {
       <List>
         <li>
           <SocialLink
-            href="https://www.linkedin.com/in/danieletortora/"
+            href="https://www.linkedin.com/in/florin-dumitru-a997941a/"
             aria-label="LinkedIn Profile"
           >
             <LinkedInIcon width="64" />
@@ -64,7 +64,7 @@ const Footer = () => {
         </li>
         <li>
           <SocialLink
-            href="https://github.com/floroz"
+            href="https://github.com/DTFsquad"
             aria-label="GitHub Profile"
           >
             <GithubIcon width="64" />
@@ -72,14 +72,14 @@ const Footer = () => {
         </li>
         <li>
           <SocialLink
-            href="https://twitter.com/floroz87"
+            href="https://twitter.com/flololo"
             aria-label="Twitter Profile"
           >
             <TwitterIcon width="64" />
           </SocialLink>
         </li>
       </List>
-      <Copyright>Daniele Tortora 2020 &copy; London, UK</Copyright>
+      <Copyright>Florin Dumitru 2020 &copy; London, UK</Copyright>
     </FooterTag>
   );
 };

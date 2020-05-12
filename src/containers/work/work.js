@@ -140,9 +140,9 @@ var KodflixCard = (
       • Designed and developed the front-end of the Kodflix using
       SSH, CSS Grid, Flexbox, React-Dom, React.
       <br />
-      • Unit Testing using Jasmine.
-      <br />• Worked with different stakeholders and presented sprints progress
-      and demos to large audience in-person and online.
+      • Unit Testing using Jest (React embeded test library).
+      <br />• Worked with different team members to presented sprints progress
+      and demos to large audience in-person.
     </CardText>
   </>
 );

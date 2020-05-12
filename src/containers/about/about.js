@@ -275,56 +275,26 @@ const About = () => {
               has driven me through a challenging yet exciting journey to become
               a Software Developer.
             </Text>
-            <Text>
-              I have a strong understanding of JavaScript and the way the
-              language works under the hood, along with an excellent
-              understanding of how Web Broweser works, which allows me to
-              quickly adapt to new tools and technologies.
-            </Text>
-            <Text>
-              Furthermore, I work with a variety of framework and libraries and
-              I like experiment outside of work with the latest tech, to ensure
-              I am always abreast of the industry's innovations.
-            </Text>
-            <Text>
-              Along with a robust experience in using HTML5, CSS (SCSS,
-              styled-component, CSS Modules) and understanding Web Performances,
-              the list of tools I consider myself proficient in using includes
-              React (Hooks and Functional Component Composition), Redux (Thunk,
-              Saga and Observables), TypeScript, GraphQL, Apollo, Gatsby.js,
-              Node, Express. I prefer Jest and React Testing Library for Unit
-              Testing and I am keen to learn and use Cypress in a commercial
-              environment.
-            </Text>
           </TextWrapper>
         );
       case JOURNEY:
         return (
           <TextWrapper>
             <Text>
-              Despite choosing a different academic path, which led me to
-              successfully complete a Bachelor in Psychology and a Master in
-              Clinical Psychology, technology has remained my primary interest
-              and a source of inspiration and curiosity. In July 2018, after
-              completing a Postgraduate at the Faculty of Business and Law of De
-              Montfort University of Leicester,{" "}
+            Despite choosing a different academic path, which led me to
+            successfully complete a Bachelor in Communication Sciences
+            (Social, Political and Communication Sciences) technology has
+            remained my primary interest and a source of inspiration and
+            curiosity.
+            In December 2017, after completing a Microsoft Tehnology Associate (MTA),{" "}
               <HighLight>
                 I realised that I wanted to do something different, something I
                 was really passionate about, an invest all my energy into it.
               </HighLight>
             </Text>
             <Text>
-              In September 2018, I planned and drafted my roadmap to become a
-              web developer within the next 6 months. I started learning HTML,
-              CSS and JavaScript from different sources (eBooks, freeCodeCamp,
-              Udemy). The more I dived into web-development the more I loved it.
-            </Text>
-            <Text>
-              I started coding everyday after work for 2-3 hours, and for 10-12
-              hours during the weekends. Two months into learning the basics, I
-              started applying for several junior roles, and within a couple of
-              weeks and a few interviews/technical tests, I received an offer
-              for a full-time position as a Junior Developer.
+            I started coding everyday after work for 1 hour, and
+            for 8 hours during the weekends.
             </Text>
           </TextWrapper>
         );
@@ -332,20 +302,18 @@ const About = () => {
         return (
           <TextWrapper>
             <Text>
-              From the beginning of my new career, I have spent the majority of
-              my free time to not only improve and consolidate my knowledge of
-              the building blocks of the web (HTML, CSS, JavaScript, Browser
-              Compatibility, Web Performance and Web Security, Accessibility)
-              but I have also spent a large amount of time learning and
-              experimenting with modern framework, languages and libraries
-              (React, Vue, Angular, Redux, GraphQL, Node, Apollo, SVG Animation,
-              GSAP).
+              From the beginning of my adventure, I have spent the majority
+              of my free time to not only improve and consolidate my
+              knowledge of the building blocks of the web (HTML, CSS,
+              JavaScript, Browser Compatibility, Web Performance and Web Security,
+              Accessibility) but I have also spent a large amount of
+              time learning and experimenting with modern framework and
+              technologies (React, Redux, GraphQL, Node, Apollo, Vue, SVG Animation, GSAP, AWS).
             </Text>
             <Text>
               I constantly keep myself up to date with the latest innovation in
               Front End Development and in the JavaScript ecosystem, using
-              different media such as Twitter, Medium, dev.to, CSS Tricks,
-              Frontend Masters, etc.
+              different media such as Twitter, Medium, dev.to, CSS Tricks,etc.
             </Text>
             <Text>
               <HighLight>
